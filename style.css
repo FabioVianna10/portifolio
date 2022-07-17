@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  /*--COLORS---*/
+  --letterBlack: #272727;
+  --letterBlackHover: #272727c2;
+  --letterGreen: rgb(37, 155, 121);
+  --letterWhite: #fff;
+  --letterWhiteHover: rgba(255, 255, 255, 0.774);
+  --btColor: ;
+  --btColorHover: ;
+  --backbtn: ;
+  --backbtnHover: ;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1f3e52;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  max-width: 150rem;
+  background: linear-gradient(95deg, #132733, #1f3e52, #132733);
+}
+
+*/*--------------MENU DE NAVEGAÇÃO-------------------*/
+
+
+.navContainer {
+  width: 100%;
+  height: 9rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navMenu {
+  display: flex;
+  gap: 2rem;
+}
+#logo {
+  cursor: pointer;
+}
+
+.navMenu a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--letterGreen);
+  transition: 0.5s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: rgba(255, 255, 255, 0.692);
+  transform: translatey(-0.5rem);
+}
+
+.navMenu a:nth-last-child(1) {
+  margin-right: 2rem;
+}
+
+/*--------INTRODUCE---------*/
+
+.introSection {
+  width: 100vw;
+}
+.introContainer {
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.title h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
+  margin-top: 20rem;
+  color: var(--letterWhite);
+}
+
+.title p {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  margin-left: 5rem;
+  color: var(--letterGreen);
+}
+
+/*--------ABOUT---------*/
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.aboutGrid {
+  height: 40vh;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+.text {
+  max-width: 40em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: var(--letterWhite);
+  text-align: center;
+  cursor: pointer;
+}
+
+.text p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 200;
+  color: var(--letterWhite);
+}
+.text p:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.photo {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.photo img {
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 8rem;
+}
+
+/*------SKILLS SECTION---------*/
+
+.skillsSection {
+  width: 100vw;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.boxSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.boxSkills h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--letterWhite);
+}
+
+.skillsImg {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.skillsImg img {
+  width: 15%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.skillsImg img:hover {
+  transform: scale(1.1);
+  opacity: 3;
+}
+
+/*------PORTIFOLIO SECTION---------*/
+.portifolioSection {
+  height: 90vh;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.portifolioSection h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--letterWhite);
+}
+
+.portContainer {
+  width: 100vw;
+  height: 60vh;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 32rem;
+  height: 40rem;
+  margin-top: 2rem;
+  transition: 0.9s ease-in-out;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  opacity: 5;
+  background-color: rgb(209, 205, 205);
+}
+
+.portImg {
+  width: 100%;
+}
+
+.portcontent {
+  width: 100%;
+  height: 10rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portcontent h3 {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: var(--letterBlack);
+  font-weight: 700;
+}
+
+.portcontent p {
+  color: var(--letterBlack);
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.btnBox {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btnBox a {
+  background-color: #0096c7;
+  color: var(--letterWhite);
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  margin-top: 5rem;
+  border-radius: 0.6rem;
+  transition: 0.5s ease-in-out;
+}
+
+.btnBox a:hover {
+  background-color: #0095c7a8;
+}
+
+.portImg {
+  width: 32rem;
+  height: auto;
+}
+
+.portImg img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+/*------CONTACT---------*/
+
+.contactSection {
+  width: 100vw;
+  height: 40vh;
+  padding: 5rem;
+}
+
+.contactContainer h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--letterWhite);
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.informations a {
+  color: var(--letterWhite);
+  font-size: 1.8rem;
+  color: var(--letterGreen);
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: 0.3s ease-out;
+}
+
+.informations a:hover {
+  color: #dae5e973;
+}
+
+.contactContainer h3 {
+  text-align: right;
+  padding: 0 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-top: 8rem;
+  color: var(--letterGreen);
+}
+
+.arrow {
+  color: var(--letterGreen);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 45rem;
+}
+
+h2::after {
+  content: "";
+  width: 2rem;
+  height: 0.5rem;
+  background-color: var(--letterGreen);
+  display: block;
+  margin: 1rem auto;
+}
+
+/*------RESPONSIVE---------*/
