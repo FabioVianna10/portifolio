@@ -15,14 +15,14 @@
   <body>
     <header class="headerContainer">
       <span id="topo"></span>
-      <nav class="navContainer">
+      <nav id="nav" class="navContainer">
         <img
           id="logo"
           src="img/fvlogo.png"
           alt="Imagem do logo é as letras f e v entre o sinal de menor e maior"
         />
 
-        <ul class="navMenu">
+        <ul id="navMenu"  class="navMenu">
           <a href="#topo">
             <li>inicio</li>
           </a>
@@ -39,6 +39,16 @@
             <li>contato</li>
           </a>
         </ul>
+
+         <!-- MENU MOBILE -->
+         
+        <div class="menuHamburger">
+          <input type="checkbox" id="btnMobile">
+          <label for="btnMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
       </nav>
     </header>
 
