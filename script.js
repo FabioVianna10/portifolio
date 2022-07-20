@@ -12,24 +12,33 @@ function typeLetter(e) {
 
 typeLetter(title);
 
+
+
+
 /*---------MENU HAMBURGUER------*/
 
 const btnMobile = document.getElementById("btnMobile");
 const nav = document.getElementById("navMenu");
-var estate = false;
 
-function toggleOn(event) {
-  if(estate !=true){
-  if (event.type === "touchstart") event.preventDefault();
-  const nav = document.getElementById("navMenu");
+
+
+
+const toggleOn = (e) => {
+  
+  if (e.type === "touchstart") e.preventDefault();
   nav.classList.toggle("active");
+
+  
+}
+
+function closeMenu() {
+  const navegation = document.getElementById('nav');
+  nav.classList.remove('active');
+  document.getElementById('btnMobile').checked = false;
 }
  
-}
-
-
-
-
 
 btnMobile.addEventListener("click", toggleOn);
 btnMobile.addEventListener("touchstart", toggleOn);
+
+

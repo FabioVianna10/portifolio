@@ -40,7 +40,8 @@ body {
   font-size: 1.6rem;
   margin: 0 1rem;
   max-width: 150rem;
-  background: linear-gradient(95deg, #132733, #1f3e52, #132733);
+  background: linear-gradient(95deg, #132733, #1f3e52, #132733) no-repeat center;
+  backgrou
 }
 
 /*--------Menu Hamburguer---------*/
@@ -177,7 +178,7 @@ label span:nth-child(3) {
 .about {
   width: 100vw;
   height: 100vh;
-  margin-top: 5rem;
+  padding-top: 9rem;
 }
 
 .aboutGrid {
@@ -235,7 +236,7 @@ label span:nth-child(3) {
   width: 100vw;
   height: 80vh;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 9rem 3rem;
   text-align: center;
 }
 
@@ -467,25 +468,30 @@ h2::after {
     display: block;
   }
 
+  #nav{
+    background-color: tomato;
+  }
+
   .navMenu {
-    display: block;
+    display: inline;
     width: 100%;
     height: 0;
     position: absolute;
     top: 8rem;
     right: 0;
-    padding: 2rem 3rem;
-    background: #132733;
+   background: #132733;
     z-index: 99999;
     touch-action: none;
     transition: 0.5s ease-in;
     visibility: hidden;
+    overflow-y: hidden;
   }
 
   .navMenu.active {
     height: calc(100vh - 8rem);
     overflow-y: auto;
     visibility: visible;
+    background-color: red;
   }
 
   .navMenu a {
