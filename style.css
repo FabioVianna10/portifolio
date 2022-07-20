@@ -543,6 +543,20 @@ h2::after {
   }
 }
 
+@media (max-width: 360px) {
+  html {
+    font-size: 36%;
+  }
+
+  .skillsSection {
+    height: 60vh;
+  }
+
+  .portifolioSection {
+    height: 150vh;
+  }
+}
+
 @media (max-width: 320px) {
   html {
     font-size: 34%;
