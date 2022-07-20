@@ -24,8 +24,7 @@
 
 html {
   font-size: 62.5%;
-  width: 100vw;
-  height: 100vh;
+
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
@@ -37,11 +36,11 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-size: 1.6rem;
-  margin: 0 1rem;
   max-width: 150rem;
-  background: linear-gradient(95deg, #132733, #1f3e52, #132733) ;
-  backgrou
+  background: linear-gradient(95deg, #132733, #1f3e52, #132733) fixed;
 }
 
 /*--------Menu Hamburguer---------*/
@@ -71,7 +70,7 @@ label span {
   height: 0.2rem;
   width: 100%;
   border-radius: 3rem;
-  background: #4AA78C;
+  background: #4aa78c;
   transition: 0.25s ease-in-out;
 }
 
@@ -109,11 +108,12 @@ label span:nth-child(3) {
   width: 100%;
   height: 9rem;
   padding: 1rem 2rem;
-  background-color: transparent;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .navMenu {
@@ -145,14 +145,15 @@ label span:nth-child(3) {
 
 .introSection {
   width: 100vw;
+  height: 100vh;
 }
 .introContainer {
   width: 100vw;
+  height: 100vh;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
 }
 
 .title h1 {
@@ -160,7 +161,7 @@ label span:nth-child(3) {
   font-weight: bold;
   letter-spacing: 0.2rem;
   line-height: 5rem;
-  margin-top: 20rem;
+  padding-top: 20rem;
   color: var(--letterWhite);
 }
 
@@ -190,7 +191,7 @@ label span:nth-child(3) {
 }
 
 .text {
-  max-width: 40em;
+  max-width: 70rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -226,6 +227,7 @@ label span:nth-child(3) {
 
 .photo img {
   object-fit: contain;
+  max-width: 100%;
   border-radius: 50%;
   margin-bottom: 8rem;
 }
@@ -262,12 +264,12 @@ label span:nth-child(3) {
   justify-content: space-between;
   gap: 6rem;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
 
 .skillsImg img {
   width: 15%;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in;
   cursor: pointer;
   opacity: 0.8;
 }
@@ -279,9 +281,9 @@ label span:nth-child(3) {
 
 /*------PORTIFOLIO SECTION---------*/
 .portifolioSection {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
-  padding: 2rem;
+  padding-top: 9rem;
 }
 
 .portifolioSection h2 {
@@ -289,7 +291,6 @@ label span:nth-child(3) {
   font-size: 3rem;
   font-weight: bold;
   line-height: 3rem;
-  margin-top: 5rem;
   margin-bottom: 10rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -298,7 +299,7 @@ label span:nth-child(3) {
 
 .portContainer {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-evenly;
@@ -307,19 +308,17 @@ label span:nth-child(3) {
 }
 
 .box {
-  background-color: #fff;
+  background-color: var(--letterWhite);
   border-radius: 1rem;
   width: 32rem;
   height: 40rem;
   margin-top: 2rem;
   transition: 0.9s ease-in-out;
   cursor: pointer;
-  opacity: 0.9;
 }
 
 .box:hover {
   transform: scale(1.1);
-  opacity: 5;
   background-color: rgb(209, 205, 205);
 }
 
@@ -372,7 +371,7 @@ label span:nth-child(3) {
 }
 
 .btnBox a:hover {
-  background-color: #0095c7a8;
+  background-color: #0095c776;
 }
 
 .portImg {
@@ -392,7 +391,7 @@ label span:nth-child(3) {
 .contactSection {
   width: 100vw;
   height: 40vh;
-  padding: 5rem;
+  padding-top: 9rem;
 }
 
 .contactContainer h2 {
@@ -434,7 +433,7 @@ label span:nth-child(3) {
   line-height: 3rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  margin-top: 8rem;
+  padding-top: 9rem;
   color: var(--letterGreen);
 }
 
@@ -457,6 +456,16 @@ h2::after {
 
 /*------RESPONSIVE---------*/
 
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .portifolioSection {
+    height: 156vh;
+  }
+}
+
 @media (max-width: 500px) {
   html,
   body {
@@ -468,8 +477,7 @@ h2::after {
     display: block;
   }
 
-  #nav{
-    background-color: tomato;
+  #nav {
   }
 
   .navMenu {
@@ -479,7 +487,7 @@ h2::after {
     position: absolute;
     top: 8rem;
     right: 0;
-   background: #132733;
+    background: #1f3e52;
     z-index: 99999;
     touch-action: none;
     transition: 0.5s ease-in;
@@ -488,20 +496,63 @@ h2::after {
   }
 
   .navMenu.active {
+    margin: auto;
     height: calc(100vh - 8rem);
     overflow-y: auto;
     visibility: visible;
-    background-color: red;
   }
 
   .navMenu a {
     width: 100%;
     height: 6rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     border-bottom: 0.2rem solid #0096c7;
     color: var(--letterWhite);
     font-size: 1.3rem;
     font-weight: 400;
+  }
+}
+
+@media (max-width: 428px) {
+  html {
+    font-size: 45%;
+  }
+
+  .skillsSection {
+    height: 60vh;
+  }
+
+  .portifolioSection {
+    height: 170vh;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 40%;
+  }
+
+  .skillsSection {
+    height: 60vh;
+  }
+
+  .portifolioSection {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 34%;
+  }
+
+  .skillsSection {
+    height: 60vh;
+  }
+
+  .portifolioSection {
+    height: 135vh;
   }
 }
