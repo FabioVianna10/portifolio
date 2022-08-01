@@ -6,7 +6,7 @@ function typeLetter(e) {
   textArray.forEach((letter, i) => {
     setTimeout(() => {
       e.innerHTML += letter;
-    }, 200 * i);
+    }, 150 * i);
   });
 }
 
@@ -41,4 +41,9 @@ function closeMenu() {
 btnMobile.addEventListener("click", toggleOn);
 btnMobile.addEventListener("touchstart", toggleOn);
 
+
+
+/*--------Animações----------*/
+
+AOS.init();
 

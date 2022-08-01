@@ -16,10 +16,7 @@
   --letterGreen: rgb(37, 155, 121);
   --letterWhite: #fff;
   --letterWhiteHover: rgba(255, 255, 255, 0.774);
-  --btColor: ;
-  --btColorHover: ;
-  --backbtn: ;
-  --backbtnHover: ;
+  
 }
 
 html {
@@ -172,6 +169,8 @@ label span:nth-child(3) {
   line-height: 4rem;
   margin-left: 5rem;
   color: var(--letterGreen);
+  animation: bounceInLeft 2.5s;
+
 }
 
 /*--------ABOUT---------*/
@@ -508,7 +507,7 @@ h2::after {
     padding: 2rem;
     display: flex;
     align-items: center;
-    border-bottom: 0.2rem solid #0096c7;
+    border-bottom: 0.2rem solid #4aa78c;
     color: var(--letterWhite);
     font-size: 1.3rem;
     font-weight: 400;
@@ -516,6 +515,7 @@ h2::after {
 }
 
 @media (max-width: 428px) {
+
   html {
     font-size: 45%;
   }
@@ -527,6 +527,9 @@ h2::after {
   .portifolioSection {
     height: 170vh;
   }
+  .
+  
+  
 }
 
 @media (max-width: 390px) {
@@ -578,3 +581,7 @@ h2::after {
     height: 135vh;
   }
 }
+
+/*-------------ANIMAÇÕES-------------------*/
+
+
