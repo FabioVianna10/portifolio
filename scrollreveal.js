@@ -5,14 +5,14 @@ window.sr = ScrollReveal({ reset: true });
 ScrollReveal().reveal(".introSection", {
   delay: 450,
   origin: "top",
-  distance: "600px",
+  distance: "1000px",
   easing: "ease-in-out",
   reset: false,
 });
 
 ScrollReveal().reveal(".about", {
   delay: 450,
-  origin: "top",
+  
   distance: "120px",
   easing: "ease-in-out",
   reset: true,
