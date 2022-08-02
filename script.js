@@ -42,8 +42,3 @@ btnMobile.addEventListener("click", toggleOn);
 btnMobile.addEventListener("touchstart", toggleOn);
 
 
-
-/*--------Animações----------*/
-
-AOS.init();
-
