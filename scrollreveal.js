@@ -5,7 +5,7 @@ window.sr = ScrollReveal({ reset: true });
 ScrollReveal().reveal(".introSection", {
   delay: 450,
   origin: "top",
-  distance: "300px",
+  distance: "600px",
   easing: "ease-in-out",
   reset: false,
 });
