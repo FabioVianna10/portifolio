@@ -12,12 +12,12 @@
  CSS
  JAVASCRIPT
  
-Utilizando html 5 semantico 
-Css responsivo
-Felxbox
-Pseudo classes
-Pseudo elementos
-Variaveis em Css
+Utilizando html 5 semantico, 
+Css responsivo,
+Felxbox,
+Pseudo classes,
+Pseudo elementos,
+Variaveis em Css,
 
 
  
@@ -31,7 +31,7 @@ Variaveis em Css
  
  
  
- Imagens do projeto
+ Imagens do projeto:
  
  ![image](https://user-images.githubusercontent.com/88548832/183072490-90a91d45-cad8-4df2-aa95-9efc98a8cca6.png)
  
