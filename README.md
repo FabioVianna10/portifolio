@@ -1,6 +1,6 @@
 
 
-# Pojeto  Fábio Vianna - Portifólio
+#   Portifólio - Fábio Vianna 
 
 
  # Desenvolvimento de um site portifólio com o objetivo de demonstrar os projetos desenvolvidos  
@@ -8,14 +8,23 @@
  
  # Tecnologias Utilizadas
  
- HTML
+  HTML
  CSS
  JAVASCRIPT
  
+Utilizando html 5 semantico 
+Css responsivo
+Felxbox
+Pseudo classes
+Pseudo elementos
+Variaveis em Css
+
+
  
  
  
-  # Tecnologias Utilizadas
+ 
+ 
  
  
  
@@ -36,7 +45,7 @@
 
  
  
- # Gif do Projeto
+ # Video do Projeto
  
  
 
